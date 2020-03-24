@@ -83,8 +83,8 @@ module.exports.submeter = function(application, req, res){
 			};
 
 			request(options, function (error, resp, body) {
-			    if(err)
-			    	var response = {status: 'error', error: err};					
+			    if(error)
+			    	var response = {status: 'error', error: error};					
 			    else
 			    	var response = body;
 
